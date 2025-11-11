@@ -7,7 +7,9 @@
   "main": "index.js",
   "scripts": {
     "devold": "node --watch index.js",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "express": "^5.1.0"
