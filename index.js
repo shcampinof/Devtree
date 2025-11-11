@@ -1,4 +1,5 @@
-const express = require('express')
+//const express = require('express') // CJS Common JS
+import express from 'express' // ESM Ecmascript Modules
 
 const app = express()
 
@@ -9,12 +10,9 @@ app.get('/', (req,res)=>{
     res.send('Hola mundo en Express')
 })
 
-app.get('/ecommerce', (req,res)=>{
-    res.send('Página de Ecommerce')
-})
+const port = 4000;
 
-
-app.listen(4000, ()=>{
-    console.log("Servidor Funcionando...")
+app.listen(port, ()=>{
+    console.log("Servidor Funcionando en el puerto: ", port)
 
 })
